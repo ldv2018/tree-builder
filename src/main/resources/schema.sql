@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS "type" (
 
 CREATE TABLE IF NOT EXISTS vendor (
     vendor_id serial,
-    name text,
+    name text UNIQUE,
     CONSTRAINT pk_vendor PRIMARY KEY (vendor_id)
 );
 
